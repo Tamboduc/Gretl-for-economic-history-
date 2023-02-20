@@ -1,0 +1,25 @@
+gretl console: type 'help' for a list of commands
+? include multiplot.gfn
+? gnuplot 1 2 3 4  --output=plot1.gp --with-lines --time-series 
+? gnuplot 5 6 7 8  --output=plot2.gp --with-lines --time-series
+? gnuplot 9  --output=plot3.gp --with-lines --time-series
+? gnuplot 10  --output=plot4.gp --with-lines --time-series
+? gnuplot 10 11 12  --output=plot5.gp --with-lines --time-series
+? gnuplot 10 12 13  --output=plot6.gp --with-lines --time-series
+? string Gin = multiplot(defarray("plot1.gp","plot2.gp","plot3.gp","plot4.gp","plot5.gp","plot6.gp" ), "Multi6.png",3,2)
+? string Gin = multiplot(defarray("plot1.gp","plot2.gp","plot3.gp","plot4.gp","plot5.gp","plot6.gp" ), "Multi6.pdf",3,2)
+? string Gin = multiplot(defarray("plot1.gp","plot2.gp","plot3.gp","plot4.gp","plot5.gp","plot6.gp" ), "Multi6.pdf",3,2)
+
+> strings codes = get_file_contents(files_input)
+? gnuplot 1 2 3 4  --output=plot1.gp --with-lines --time-series
+? gnuplot 5 6 7 8  --output=plot2.gp --with-lines --time-series
+? gnuplot 9  --output=plot3.gp --with-lines --time-series
+? gnuplot 10  --output=plot4.gp --with-lines --time-series
+? gnuplot 10 11 12  --output=plot5.gp --with-lines --time-series
+? gnuplot 10 12 13  --output=plot6.gp --with-lines --time-series
+? string Gin = multiplot(defarray("plot1.gp","plot2.gp","plot3.gp","plot4.gp","plot5.gp","plot6.gp" ), "Multi6.pdf",3,2)
+? #set grid + ylabel 
+gnuplot 2 3  --time-series  { set grid; set ylabel "Dollars";}
+Invalid option '--time-series'
+? gnuplot 2 3 --with-lines --time-series   { set grid; set ylabel "Dollars";}
+? bundle options = defbundle("FONT_SIZE", 8, "PLOT_HEIGHT", 900)
