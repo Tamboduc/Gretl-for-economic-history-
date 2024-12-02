@@ -1,0 +1,15 @@
+# logged commands
+open \
+  "C:/Users/cristianarturo.ducoi/Dropbox/Umea/Econometría/Econometría y Gretl/GretlEHAdventCalendar/Databases/GretlMaddison.xlsx" \
+  --coloffset=1
+setobs 1 1 --time-series
+gnuplot AFG --time-series --with-lines
+gnuplot AFG --time-series --with-lines
+scatters  AFG AGO ALB ARE ARG ARM AUS AUT AZE BDI BEL BEN BFA BGD BGR BHR \
+  BIH BLR --with-lines
+smpl 1800 2022
+scatters  AFG AGO ALB ARE ARG ARM AUS AUT AZE BDI BEL BEN BFA BGD BGR BHR \
+  BIH BLR --with-lines
+gnuplot ARG --time-series --with-lines
+gnuplot ARG --time-series --with-lines
+# store "C:\Users\cristianarturo.ducoi\Dropbox\Umea\Econometría\Econometría y Gretl\GretlEHAdventCalendar\Databases\1GretlMaddison.gdt" --gzipped=1
