@@ -1,4 +1,3 @@
 # Gretl economic-history Advent Calendar
-Code, figures and data to teach an research economic history. 
+The main databases available in economic history. Gretl format and some code
 
-This site is to share data sets, code and ideas to use Gretl in economic history teaching and research 
