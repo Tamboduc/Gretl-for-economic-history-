@@ -1,4 +1,4 @@
-# Gretl-for-economic-history-
+# Gretl economic-history Advent Calendar
 Code, figures and data to teach an research economic history. 
 
 This site is to share data sets, code and ideas to use Gretl in economic history teaching and research 
