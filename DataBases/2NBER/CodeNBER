@@ -1,0 +1,13 @@
+
+open nberhist16 --www
+data m16001
+gnuplot m16001 --time-series --with-lines
+gnuplot m16001 --time-series --with-lines
+open C:\Users\AppData\Roaming\gretl\db\nberhist16.bin
+data m16183
+gnuplot m16183 --time-series --with-lines
+data m16022a
+data m16022b
+data m16026
+data m16027
+scatters 1 2 3 4 5 6
